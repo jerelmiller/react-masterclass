@@ -1,3 +1,3 @@
 # React Masterclass
 
-This repo will be used to learn React
+Lets learn React together!
