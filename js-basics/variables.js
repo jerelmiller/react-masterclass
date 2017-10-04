@@ -136,3 +136,14 @@ function teachLetBlockScope() {
 }
 
 teachLetBlockScope()
+
+/* ----------- const --------- */
+
+function teachConst() {
+  const greeting = 'Hello'
+  greeting = 'Hello'
+
+  console.log(greeting)
+}
+
+teachConst()
