@@ -81,3 +81,34 @@ const doubled = map(values, function(num) {
 
 console.log(doubled)
 
+/* -------------------------- */
+
+const sayings = {
+  hello: function() {
+    console.log('You dawg, whats the haps?')
+  },
+  goodbye: function() {
+    console.log('good day to you')
+  }
+}
+
+sayings.hello()
+sayings.goodbye()
+
+/* -------------------------- */
+
+const dishes = {
+  breakfast() {
+    console.log("Too bad I'm not a chef")
+  },
+  lunch() {
+    console.log("Ya, I can't get that for you")
+  },
+  dinner() {
+    console.log("You demand too much")
+  }
+}
+
+dishes.breakfast()
+dishes.lunch()
+dishes.dinner()
