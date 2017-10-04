@@ -1,4 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+class Hello extends Component {
+  render() {
+    return <h1>Hello</h1>
+  }
+}
+
+ReactDOM.render(<Hello />, document.getElementById('root'))
