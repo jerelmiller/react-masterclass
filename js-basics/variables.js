@@ -147,3 +147,14 @@ function teachConst() {
 }
 
 teachConst()
+
+/* -------------------------- */
+
+function teachMutableConst() {
+  const games = ['Mario', 'Zelda']
+  games.push('Bomberman')
+
+  console.log(games)
+}
+
+teachMutableConst()
