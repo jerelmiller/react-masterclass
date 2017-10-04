@@ -1,3 +1,5 @@
+/* ---------- var --------------- */
+
 var myVar = 'Not a clever variable name'
 
 console.log(myVar)
@@ -67,3 +69,70 @@ function teachVarBlockScope() {
 }
 
 teachVarBlockScope()
+
+/* ---------- let ----------- */
+
+function teachLet() {
+  let greeting = 'hello'
+
+  console.log(greeting)
+}
+
+teachLet()
+
+/* -------------------------- */
+
+function teachLetReassign() {
+  let greeting = 'hello'
+  greeting = 'Wasssssup'
+
+  console.log(greeting)
+}
+
+teachLetReassign()
+
+/* -------------------------- */
+
+function teachLetRedeclare() {
+  let greeting = 'hello'
+  let greeting = 'bummer dude'
+
+  console.log(greeting)
+}
+
+teachLetRedeclare()
+
+/* -------------------------- */
+
+function teachLetHoisting() {
+  console.log(greeting)
+  let greeting = 'hello'
+
+  console.log(greeting)
+}
+
+teachLetHoisting()
+
+/* -------------------------- */
+
+function teachLetBlockScope() {
+  let greeting = 'hello'
+
+  if (greeting === 'hello') {
+    let goodbye = 'goodbye'
+
+    console.log(goodbye)
+  }
+
+  console.log(goodbye)
+
+  if (greeting === 'hello') {
+    let greeting = 'bummer'
+
+    console.log(greeting)
+  }
+
+  console.log(greeting)
+}
+
+teachLetBlockScope()
