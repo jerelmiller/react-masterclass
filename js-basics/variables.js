@@ -1,15 +1,9 @@
-/**
- * var, let, const
- * --------------
- * Learn the basics of variable declaration
- */
-
-// ----- var -----
 var myVar = 'Not a clever variable name'
 
 console.log(myVar)
 
-// -------
+/* -------------------------- */
+
 function teachFunctionScope() {
   var myVar = 'Still a terrible variable name'
 
@@ -19,7 +13,8 @@ function teachFunctionScope() {
 teachFunctionScope()
 console.log(myVar)
 
-// --------
+/* -------------------------- */
+
 function teachVarReassignment() {
   var firstName = 'Jerel'
   firstName = 'Bob'
@@ -29,7 +24,8 @@ function teachVarReassignment() {
 
 teachVarReassignment()
 
-// -----------
+/* -------------------------- */
+
 function teachVarRedeclaration() {
   var firstName = 'Jerel'
   var firstName = 'Bob'
@@ -39,7 +35,8 @@ function teachVarRedeclaration() {
 
 teachVarRedeclaration()
 
-// ------------
+/* -------------------------- */
+
 function teachVarHoisting() {
   console.log(firstName)
   var firstName = 'Jerel'
@@ -49,7 +46,8 @@ function teachVarHoisting() {
 
 teachVarHoisting()
 
-// -----------
+/* -------------------------- */
+
 function teachVarBlockScope() {
   var age = 22
   var legal = false
