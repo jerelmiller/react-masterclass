@@ -4,6 +4,11 @@ Here you will find some examples for some basic JavaScript concepts. To be a
 successful React developer, I find it helpful to have a solid understanding of
 JavaScript itself.
 
+**Topics Covered**
+
+* variables
+* functions
+
 ## Setup
 
 There is no setup for this example. Simply follow the "Running the examples"
