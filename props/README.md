@@ -1,8 +1,7 @@
 # Props
 
 Props are the bread-and-butter of React components. They are how you communicate
-from one component to another. Think of props like arguments to a function. They
-allow you to pass input from one component to another.
+from one component to another. Think of props like arguments to a function.
 
 Here you will learn the basics of rendering your first React component, what
 the `React` and `ReactDOM` packages are used for, and how to use your components
