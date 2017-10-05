@@ -1,4 +1,15 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-ReactDOM.render(<h1>Hello</h1>, document.getElementById('root'))
+// This example demonstrates how you can render a React element directly. There
+// are several examples within this app that you can play around with. To swap
+// out what is rendered, simply `import` the component and render it.
+//
+//    import Hello from './Hello'
+//
+//    ReactDOM.render(<Hello />, /* ... */)
+
+ReactDOM.render(
+  <h1>Hello</h1>,
+  document.getElementById('root')
+)
