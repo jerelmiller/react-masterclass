@@ -1,39 +1,29 @@
-# Setup
+# Props
 
-Clone this repository
+Props are the bread-and-butter of React components. They are how you communicate
+from one component to another. Think of props like arguments to a function. They
+allow you to pass input from one component to another.
 
-```
-$ git clone git@git@invent.focusvision.com:Portland/react-masterclass.git
-```
+Here you will learn the basics of rendering your first React component, what
+the `React` and `ReactDOM` packages are used for, and how to use your components
+together to create an app.
 
-Ensure either `yarn` or `npm` is installed. `npm` is installed by default when
-you install `node`.
+## Setup
 
-I recommend using `yarn`. To install follow the instructions at
-[https://yarnpkg.com/en/docs/install](https://yarnpkg.com/en/docs/install)
-
-Fetch the dependencies
+Ensure you are in this directory
 
 ```
 $ cd props
+```
+
+Install dependencies
+
+```
 $ yarn
-```
-
-or with `npm`
-
-```
-$ cd props
-$ npm install
 ```
 
 Start the app
 
 ```
 $ yarn start
-```
-
-or
-
-```
-$ npm start
 ```
