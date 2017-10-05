@@ -2,8 +2,9 @@
 
 Lets learn React together!
 
-Inside this repo, you will find folders covering a variety of topics. Each topic
-has its own setup instructions.
+Inside this repo, you will find folders covering a variety of topics. We will
+try and teach from these example folders during our lunch n' learns so that we
+have a bunch of learned ideas that we can refer back to!
 
 ## Setup
 
@@ -63,3 +64,24 @@ $ yarn start
 This should open your browser with the running React app! Once running, you may
 edit any file within `src` to see the browser automatically refresh with your
 changes.
+
+## Contributing
+
+You are encouraged to contribute. While learning these concepts, you may find it
+helpful to modify or add additional examples for a given topic. Submit a PR to
+add some changes! I find interactive learning to be the easiest way to work with
+a new idea. It would be awesome to have a record of everyone's examples to teach
+each other what we are learning.
+
+As we move along, we will add more topics. If there is a particular topic you
+are interested in that has not yet been covered, feel free to create a PR with a
+new folder name of the topic you would like to learn. To commit empty folders,
+create a folder with a `.gitkeep`. We can use this folder to bootstrap new
+examples that cover the topic you are interested about.
+
+## Code reviews
+
+Just like our normal work, you are encouraged to do code reviews. Sometimes its
+helpful to get feedback while you are learning a new topic. Unlike normal work,
+we will not require approvals to merge the PR. Just be sure that you have run
+the example before merging to ensure others can also run your example!
