@@ -1,5 +1,7 @@
 import React from 'react'
 
-export default function Greeting(props) {
-  return <h1>Welcome to React Masterclass, { props.name }</h1>
-}
+const Greeting = props => (
+  <h1>Welcome to React Masterclass, { props.name }</h1>
+)
+
+export default Greeting
