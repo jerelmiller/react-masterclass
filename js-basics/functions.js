@@ -64,3 +64,58 @@ const dishes = {
 dishes.breakfast()
 dishes.lunch()
 dishes.dinner()
+
+/* -------------------------- */
+
+const myFirstArrowFunction = () => {
+  console.log('Very pointy')
+}
+
+myFirstArrowFunction()
+
+/* -------------------------- */
+
+const greet = (name) => {
+  console.log(`Hello ${name}`)
+}
+
+greet('Jerel')
+
+/* -------------------------- */
+
+const greetAlternate = name => {
+  console.log(`Howdy ${name}`)
+}
+
+greetAlternate('Jerel')
+
+/* -------------------------- */
+
+const add = (a, b) => {
+  return a + b
+}
+
+console.log(add(1, 2))
+
+/* -------------------------- */
+
+const subtract = (a, b) => a - b
+
+console.log(subtract(2, 1))
+
+/* -------------------------- */
+
+const numbers = [1, 2, 3, 4]
+
+const doubledNumbers = numbers.map(num => num * 2)
+
+console.log(doubledNumbers)
+
+/* -------------------------- */
+
+const exclaim = phrase => `${phrase}!`
+const phrases = ["Don't do it", 'Bring me coffee']
+
+const excitedPhrases = phrases.map(exclaim)
+
+console.log(excitedPhrases)
