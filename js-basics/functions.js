@@ -95,7 +95,15 @@ meals.lunch()
 meals.dinner(true)
 meals.dinner(false)
 
-/* -------------------------- */
+/* ------ Arrow functions ------ */
+
+// ES6 introduced a new syntax for declaring functions. These are called arrow
+// functions (`=>`). Arrow functions are always anonymous.
+//
+// There are some differences in behavior between arrow functions and functions
+// declared using the `function` keyword. These differences are not taught
+// within this lesson. Refer to the intermediate-js examples to learn more
+// about how the behavior differs.
 
 const myFirstArrowFunction = () => {
   console.log('Very pointy')
@@ -103,15 +111,24 @@ const myFirstArrowFunction = () => {
 
 myFirstArrowFunction()
 
-/* -------------------------- */
+/* ------ Arrow functions: Arguments ------ */
 
-const greet = (name) => {
-  console.log(`Hello ${name}`)
+// Since arrow functions are just regular functions, you can accept arguments
+// like you normally would. Notice the arguments are encasulated within the
+// `()`.
+
+const greet = (firstName, lastName) => {
+  const greeting = `Hello ${firstName} ${lastName}`
+
+  console.log(greeting)
 }
 
 greet('Jerel')
 
-/* -------------------------- */
+/* ------ Arrow functions: Single argument shorthand ------ */
+
+// When you only have a single argument to an arrow function, you may omit the
+// parens.
 
 const greetAlternate = name => {
   console.log(`Howdy ${name}`)
@@ -119,7 +136,9 @@ const greetAlternate = name => {
 
 greetAlternate('Jerel')
 
-/* -------------------------- */
+/* ------ Arrow functions: Returning values ------ */
+
+// Use the `return` keyword to return a value from an arrow function.
 
 const add = (a, b) => {
   return a + b
@@ -127,13 +146,23 @@ const add = (a, b) => {
 
 console.log(add(1, 2))
 
-/* -------------------------- */
+/* ------ Arrow functions: Implicit returns ------ */
+
+// When your arrow function only has a single statement, you may choose to
+// return the value implicitly. This means that you can drop the `return`
+// keyword and the `{ }` from the function body. Note that implicit returns
+// will not work with `{ }` around the function body. When using `{ }`, you
+// must use the `return` keyword.
 
 const subtract = (a, b) => a - b
 
 console.log(subtract(2, 1))
 
-/* -------------------------- */
+/* ------ Arrow functions: Callbacks ------ */
+
+// Arrow functions make great callback functions. When combined with the
+// argument shorthand and implicit return, you can create some seriously
+// readable code.
 
 const numbers = [1, 2, 3, 4]
 
@@ -141,7 +170,11 @@ const doubledNumbers = numbers.map(num => num * 2)
 
 console.log(doubledNumbers)
 
-/* -------------------------- */
+/* ------ Arrow functions: First-class citizens ------ */
+
+// Arrow functions are also first-class citizens. You can pass them around like
+// any other value. This allows you to pre-define functions that can then be
+// passed as callbacks to other functions.
 
 const exclaim = phrase => `${phrase}!`
 const phrases = ["Don't do it", 'Bring me coffee']
