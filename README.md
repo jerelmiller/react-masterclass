@@ -85,3 +85,14 @@ Just like our normal work, you are encouraged to do code reviews. Sometimes its
 helpful to get feedback while you are learning a new topic. Unlike normal work,
 we will not require approvals to merge the PR. Just be sure that you have run
 the example before merging to ensure others can also run your example!
+
+## Where to begin
+
+If you are new to the JavaScript ecosystem and would like to gain a better
+understanding of some of the fundamentals, I'd recommend diving into the
+`js-basics` examples. If you feel comfortable with some of the basics, you might
+check out `js-intermediate`. In general, the `js-` example folders should give
+you a better understanding of JavaScript without React.
+
+If you are familiar with JS concepts and would just like to dive-in,
+check out some of the topics and run the examples there.
