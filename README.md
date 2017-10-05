@@ -95,4 +95,4 @@ check out `js-intermediate`. In general, the `js-` example folders should give
 you a better understanding of JavaScript without React.
 
 If you are familiar with JS concepts and would just like to dive-in,
-check out some of the topics and run the examples there.
+check out a topic you might be interested in and run the examples there.
