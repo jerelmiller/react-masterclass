@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom'
 //
 //    import Hello from './Hello'
 //
-//    ReactDOM.render(<Hello />, /* ... */)
+//    ReactDOM.render(<Hello />, document.getElementById('root'))
 
 ReactDOM.render(
   <h1>Welcome to React Masterclass</h1>,
