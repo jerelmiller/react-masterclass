@@ -25,6 +25,10 @@ doSomethingWithTwo(value => {
 
 /* ------ Callback as a first-class function ------ */
 
+// Since functions are first class citizens and can be passed around just like
+// any other variable, we can assign the callback to a variable, then pass that
+// variable as the argument to another function.
+
 const giveMeSomethingRidiculous = callback => {
   const items = [
     'solar powered cooling hat',
@@ -42,7 +46,7 @@ const handleRidiculousItem = item => {
 
 giveMeSomethingRidiculous(handleRidiculousItem)
 
-/* ------ Implementing `map` ------ */
+/* ------ Challenge: Implementing `map` ------ */
 
 const map = (array, callback) => {
   const newArray = []
