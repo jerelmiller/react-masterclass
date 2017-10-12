@@ -182,3 +182,30 @@ const phrases = ["Don't do it", 'Bring me coffee']
 const excitedPhrases = phrases.map(exclaim)
 
 console.log(excitedPhrases)
+
+/* ------ Arrow functions: Returning objects ------ */
+
+// Like regular functions, it is perfectly normal to return objects from arrow
+// functions as well.
+
+const createConfig = options => {
+  return {
+    description: `${options.version} - ${options.status}`,
+    enable: true
+  }
+}
+
+const config = createConfig({ version: 1, status: 'ok' })
+console.log(config)
+
+// Lets rewrite the above using an implicit return. Notice this presents a
+// challenge since the curlys are a signal to JavaScript to create a code
+// block. To get around this issue, surround the curlys with parens.
+
+const createAnotherConfig = options => ({
+  description: `${options.version} - ${options.status}`,
+  enable: true
+})
+
+const anotherConfig = createAnotherConfig({ version: 2, status: 'Much better' })
+console.log(anotherConfig)
