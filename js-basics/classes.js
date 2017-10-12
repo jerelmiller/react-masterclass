@@ -43,6 +43,24 @@ class Duck extends Animal {
   }
 }
 
+/* ------ Class expressions ------ */
+
+// Like functions, JavaScript allows you to create anonymous classes.
+
+const Person = class {
+  constructor(firstName, lastName) {
+    this.firstName = firstName
+    this.lastName = lastName
+  }
+
+  fullName() {
+    return `${this.firstName} ${this.lastName}`
+  }
+}
+
+const person = new Person('Michael', 'Scott')
+console.log(person.fullName())
+
 /* ------ Class properties ------ */
 
 // NOTE: This following does not work natively in Chrome.
