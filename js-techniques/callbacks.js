@@ -42,11 +42,9 @@ const handleRidiculousItem = item => {
 
 giveMeSomethingRidiculous(handleRidiculousItem)
 
-/* -------------------------- */
+/* ------ Implementing `map` ------ */
 
-// implement map
-
-const map = function(array, callback) {
+const map = (array, callback) => {
   const newArray = []
   for (let i = 0; i < array.length; i++) {
     newArray.push(callback(array[i]))
@@ -55,8 +53,14 @@ const map = function(array, callback) {
 }
 
 const values = [1, 2, 3]
+
+// Using function syntax
 const doubled = map(values, function(num) {
   return num * 2
 })
 
+// Written using arrow functions
+const doubledAgain = map(values, num => num * 2)
+
 console.log(doubled)
+console.log(doubledAgain)
