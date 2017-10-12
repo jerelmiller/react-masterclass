@@ -23,7 +23,9 @@ doSomethingWithTwo(value => {
   console.log(`The value is ${value}`)
 })
 
-const giveMeSomethingRidiculous = function(callback) {
+/* ------ Callback as a first-class function ------ */
+
+const giveMeSomethingRidiculous = callback => {
   const items = [
     'solar powered cooling hat',
     'alien butler',
@@ -34,7 +36,7 @@ const giveMeSomethingRidiculous = function(callback) {
   callback(randomItem)
 }
 
-const handleRidiculousItem = function(item) {
+const handleRidiculousItem = item => {
   console.log(`Get that ${item} away from me`)
 }
 
