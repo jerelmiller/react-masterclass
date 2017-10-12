@@ -30,6 +30,19 @@ class Cat extends Animal {
 const cat = new Cat()
 cat.makeNoise()
 
+/* ------ Hoisting ------ */
+
+// Unlike JavaScript functions, classes are not hoisted. The following will
+// result in a reference error.
+
+const duck = new Duck()
+
+class Duck extends Animal {
+  constructor() {
+    super('quack')
+  }
+}
+
 /* ------ Class properties ------ */
 
 // NOTE: This following does not work natively in Chrome.
