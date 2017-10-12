@@ -14,6 +14,7 @@ class Animal {
 
 const barker = new Animal('woof')
 barker.makeNoise()
+console.log(barker.noise)
 
 /* ------ Extending other classes ------ */
 
