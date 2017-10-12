@@ -29,3 +29,30 @@ class Cat extends Animal {
 
 const cat = new Cat()
 cat.makeNoise()
+
+/* ------ Class properties ------ */
+
+// NOTE: This following does not work natively in Chrome.
+// You will only be able to run the following if first transpiled by babel.
+
+// You can declare class properties on the class itself.
+
+class Square {
+  sides = 4
+
+  howManySides() {
+    return this.sides
+  }
+}
+
+// This is the same as setting the properties in the constructor.
+
+class Square {
+  constructor() {
+    this.sides = 4
+  }
+
+  howManySides() {
+    return this.sides
+  }
+}
