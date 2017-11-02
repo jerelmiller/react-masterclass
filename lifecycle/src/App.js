@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class App extends Component {
   render() {
-    return <span>App</span>
+    return <h1>Import some components to check them out!</h1>
   }
 }
 
